@@ -233,6 +233,11 @@ h1, h2, h3, h4, h5, h6 {
 	min-width: 300px;
 	position: relative;
 	z-index: 2;
+
+	@media screen and (max-width: 1199px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 #hero h1 {
@@ -325,15 +330,18 @@ section {
 	color: #173b6c;
 }
 
+.about .profile-img {
+	max-width: 300px;
+}
+
 .about .content ul {
 	list-style: none;
 	padding: 0;
 }
 
 .about .content ul li {
-	margin-bottom: 20px;
 	display: flex;
-	align-items: center;
+	margin-bottom: 20px;
 }
 
 .about .content ul strong {
@@ -341,9 +349,10 @@ section {
 }
 
 .about .content ul i {
+	color: #149ddd;
 	font-size: 16px;
 	margin-right: 5px;
-	color: #149ddd;
+	margin-top: 5px;
 	line-height: 0;
 }
 
@@ -371,13 +380,22 @@ section {
 	line-height: 0;
 }
 
-.facts .count-box span {
-	font-size: 48px;
-	line-height: 40px;
-	display: block;
-	font-weight: 700;
+.facts .count-box .purecounter {
 	color: #050d18;
-	margin-left: 60px;
+	display: inline-block;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.facts .count-box .count-box__title {
+	color: #050d18;
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 40px;
+	margin: 0;
 }
 
 .facts .count-box p {
@@ -405,6 +423,10 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+.skills-content:not(:last-child) {
+	margin-bottom: 20px;
+}
+
 .skills .progress {
 	height: 60px;
 	display: block;
@@ -438,6 +460,33 @@ section {
 	transition: 0.9s;
 	background-color: #149ddd;
 }
+
+.skills ul {
+	list-style: none;
+	padding: 0;
+}
+
+.skills ul li {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.skills ul strong {
+	margin-right: 10px;
+}
+
+.skills ul i {
+	color: #149ddd;
+	font-size: 16px;
+	margin-right: 5px;
+	margin-top: 5px;
+	line-height: 0;
+}
+
+.skills p:last-child {
+	margin-bottom: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Resume
@@ -491,10 +540,10 @@ section {
 .resume .resume-item::before {
 	content: "";
 	position: absolute;
-	width: 16px;
-	height: 16px;
+	width: 18px;
+	height: 18px;
 	border-radius: 50px;
-	left: -9px;
+	left: -10px;
 	top: 0;
 	background: #fff;
 	border: 2px solid #1f5297;
@@ -507,7 +556,7 @@ section {
 	margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.portfolio #portfolio-filters {
 	margin: 0 auto 35px auto;
 	list-style: none;
 	text-align: center;
@@ -516,7 +565,7 @@ section {
 	padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.portfolio #portfolio-filters li {
 	cursor: pointer;
 	display: inline-block;
 	padding: 10px 15px 8px 15px;
@@ -529,32 +578,19 @@ section {
 	transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-filters li:hover, .portfolio #portfolio-filters li.filter-active {
 	color: #149ddd;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.portfolio #portfolio-filters li:last-child {
 	margin-right: 0;
 }
 
 .portfolio .portfolio-wrap {
+	display: block;
 	transition: 0.3s;
 	position: relative;
 	overflow: hidden;
-	z-index: 1;
-}
-
-.portfolio .portfolio-wrap::before {
-	content: "";
-	background: rgba(255, 255, 255, 0.5);
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	transition: all ease-in-out 0.3s;
-	z-index: 2;
-	opacity: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -597,6 +633,11 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
 	opacity: 1;
 	bottom: 0;
+}
+
+.gslide-image {
+	background-color: white;
+	border-bottom: 1px solid #c2c2c2;
 }
 
 /*--------------------------------------------------------------
