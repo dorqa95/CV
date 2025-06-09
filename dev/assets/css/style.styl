@@ -5,21 +5,30 @@
 * License: https://bootstrapmade.com/license/
 */
 
+background-color = #040b14
+light-background-color = #f5f8fd
+primary-color = #149ddd
+font-color = #272829
+headline-color = #173b6c
+light-primary-color = #37b3ed
+dark-primary-color = #1f5297
+white = #fff
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
 	font-family: "Open Sans", sans-serif;
-	color: #272829;
+	color: font-color;
 }
 
 a {
-	color: #149ddd;
+	color: primary-color;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #37b3ed;
+	color: light-primary-color;
 	text-decoration: none;
 }
 
@@ -41,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 	right: 15px;
 	bottom: 15px;
 	z-index: 996;
-	background: #149ddd;
+	background: primary-color;
 	width: 40px;
 	height: 40px;
 	border-radius: 50px;
@@ -50,13 +59,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top i {
 	font-size: 28px;
-	color: #fff;
+	color: white;
 	line-height: 0;
 }
 
 .back-to-top:hover {
-	background: #2eafec;
-	color: #fff;
+	background: light-primary-color;
+	color: white;
 }
 
 .back-to-top.active {
@@ -76,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all ease-in-out 0.5s;
 	z-index: 9997;
 	padding: 0 15px;
-	background: #040b14;
+	background: background-color;
 	overflow-y: auto;
 }
 
@@ -84,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 15px auto;
 	display: block;
 	width: 120px;
-	border: 8px solid #2c2f3f;
+	border: 8px solid font-color;
 }
 
 .profile h1 {
@@ -99,15 +108,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .profile h1 a,
 .profile h1 a:hover {
-	color: #fff;
+	color: white;
 	text-decoration: none;
 }
 
 .profile .social-links a {
 	font-size: 18px;
 	display: inline-block;
-	background: #212431;
-	color: #fff;
+	background: font-color;
+	color: white;
 	line-height: 1;
 	padding: 8px 0;
 	margin-right: 4px;
@@ -119,8 +128,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile .social-links a:hover {
-	background: #149ddd;
-	color: #fff;
+	background: primary-color;
+	color: white;
 	text-decoration: none;
 }
 
@@ -175,11 +184,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
 	text-decoration: none;
-	color: #fff;
+	color: white;
 }
 
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-	color: #149ddd;
+	color: primary-color;
 }
 
 /* Mobile Navigation */
@@ -192,8 +201,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 24px;
 	transition: all 0.4s;
 	outline: none !important;
-	background-color: #149ddd;
-	color: #fff;
+	background-color: primary-color;
+	color: white;
 	width: 40px;
 	height: 40px;
 	display: inline-flex;
@@ -250,21 +259,21 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 64px;
 	font-weight: 700;
 	line-height: 56px;
-	color: #fff;
+	color: white;
 }
 
 #hero p {
-	color: #fff;
+	color: white;
 	margin-bottom: 50px;
 	font-size: 26px;
 	font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-	color: #fff;
+	color: white;
 	padding-bottom: 4px;
 	letter-spacing: 1px;
-	border-bottom: 3px solid #149ddd;
+	border-bottom: 3px solid primary-color;
 }
 
 @media (min-width: 1024px) {
@@ -295,7 +304,7 @@ section {
 }
 
 .section-bg {
-	background: #f5f8fd;
+	background: light-background-color;
 }
 
 .section-title {
@@ -308,7 +317,7 @@ section {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	position: relative;
-	color: #173b6c;
+	color: headline-color;
 }
 
 .section-title h2::after {
@@ -317,7 +326,7 @@ section {
 	display: block;
 	width: 50px;
 	height: 3px;
-	background: #149ddd;
+	background: primary-color;
 	bottom: 0;
 	left: 0;
 }
@@ -354,7 +363,7 @@ section {
 }
 
 .about .content ul i {
-	color: #149ddd;
+	color: primary-color;
 	font-size: 16px;
 	margin-right: 5px;
 	margin-top: 5px;
@@ -380,7 +389,7 @@ section {
 .facts .count-box i {
 	display: block;
 	font-size: 44px;
-	color: #149ddd;
+	color: primary-color;
 	float: left;
 	line-height: 0;
 }
@@ -426,7 +435,7 @@ section {
 }
 
 .facts .count-box a:hover {
-	color: #1f5297;
+	color: dark-primary-color;
 }
 
 /*--------------------------------------------------------------
@@ -467,7 +476,7 @@ section {
 	width: 1px;
 	height: 10px;
 	transition: 0.9s;
-	background-color: #149ddd;
+	background-color: primary-color;
 }
 
 .skills ul {
@@ -485,7 +494,7 @@ section {
 }
 
 .skills ul i {
-	color: #149ddd;
+	color: primary-color;
 	font-size: 16px;
 	margin-right: 5px;
 	margin-top: 5px;
@@ -511,7 +520,7 @@ section {
 .resume .resume-item {
 	padding: 0 0 1px 20px;
 	margin-top: -2px;
-	border-left: 2px solid #1f5297;
+	border-left: 2px solid dark-primary-color;
 	position: relative;
 }
 
@@ -553,8 +562,8 @@ section {
 	border-radius: 50px;
 	left: -10px;
 	top: 0;
-	background: #fff;
-	border: 2px solid #1f5297;
+	background: white;
+	border: 2px solid dark-primary-color;
 }
 
 /*--------------------------------------------------------------
@@ -568,7 +577,7 @@ section {
 	margin: 0 auto 35px auto;
 	list-style: none;
 	text-align: center;
-	background: #fff;
+	background: white;
 	border-radius: 50px;
 	padding: 2px 15px;
 }
@@ -581,13 +590,13 @@ section {
 	font-weight: 600;
 	line-height: 1;
 	text-transform: uppercase;
-	color: #272829;
+	color: font-color;
 	margin-bottom: 5px;
 	transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-filters li:hover, .portfolio #portfolio-filters li.filter-active {
-	color: #149ddd;
+	color: primary-color;
 }
 
 .portfolio #portfolio-filters li:last-child {
@@ -614,7 +623,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-	color: #fff;
+	color: white;
 	font-size: 28px;
 	text-align: center;
 	background: rgba(20, 157, 221, 0.75);
@@ -627,7 +636,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
-	border-left: 1px solid #37b3ed;
+	border-left: 1px solid light-primary-color;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -645,7 +654,7 @@ section {
 
 .gslide-image {
 	background-color: white;
-	border-bottom: 1px solid #c2c2c2;
+	border-bottom: 1px solid white;
 }
 
 /*--------------------------------------------------------------
@@ -667,13 +676,13 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
 	width: 12px;
 	height: 12px;
-	background-color: #fff;
+	background-color: white;
 	opacity: 1;
-	border: 1px solid #149ddd;
+	border: 1px solid primary-color;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-	background-color: #149ddd;
+	background-color: primary-color;
 }
 
 .portfolio-details .portfolio-info {
@@ -727,24 +736,24 @@ section {
 	justify-content: center;
 	width: 54px;
 	height: 54px;
-	background: #149ddd;
+	background: primary-color;
 	border-radius: 50%;
 	transition: 0.5s;
-	border: 1px solid #149ddd;
+	border: 1px solid primary-color;
 }
 
 .services .icon i {
-	color: #fff;
+	color: white;
 	font-size: 24px;
 	line-height: 0;
 }
 
 .services .icon-box:hover .icon {
-	background: #fff;
+	background: white;
 }
 
 .services .icon-box:hover .icon i {
-	color: #149ddd;
+	color: primary-color;
 }
 
 .services .title {
@@ -755,11 +764,11 @@ section {
 }
 
 .services .title a {
-	color: #343a40;
+	color: white;
 }
 
 .services .title a:hover {
-	color: #149ddd;
+	color: primary-color;
 }
 
 .services .description {
@@ -779,7 +788,7 @@ section {
 	margin: 15px auto;
 	display: block;
 	width: 200px;
-	border: 8px solid #149ddd;
+	border: 8px solid primary-color;
 }
 
 .leaders .title {
@@ -817,12 +826,12 @@ section {
 	font-size: 18px;
 	font-weight: bold;
 	margin: 10px 0 5px 0;
-	color: #111;
+	color: background-color;
 }
 
 .testimonials .testimonial-item h4 {
 	font-size: 14px;
-	color: #999;
+	color: primary-color;
 	margin: 0;
 }
 
@@ -848,7 +857,7 @@ section {
 	font-style: italic;
 	margin: 0 15px 15px 15px;
 	padding: 20px;
-	background: #fff;
+	background: white;
 	position: relative;
 	margin-bottom: 35px;
 	border-radius: 6px;
@@ -859,7 +868,7 @@ section {
 	content: "";
 	width: 0;
 	height: 0;
-	border-top: 20px solid #fff;
+	border-top: 20px solid white;
 	border-right: 20px solid transparent;
 	border-left: 20px solid transparent;
 	position: absolute;
@@ -875,13 +884,13 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
 	width: 12px;
 	height: 12px;
-	background-color: #fff;
+	background-color: white;
 	opacity: 1;
-	border: 1px solid #149ddd;
+	border: 1px solid primary-color;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-	background-color: #149ddd;
+	background-color: primary-color;
 }
 
 /*--------------------------------------------------------------
@@ -892,7 +901,7 @@ section {
 }
 
 .contact .info {
-	background: #fff;
+	background: white;
 	display: flex;
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 	padding: 30px;
@@ -905,11 +914,11 @@ section {
 
 .contact .info i {
 	font-size: 20px;
-	color: #149ddd;
+	color: primary-color;
 	float: left;
 	width: 44px;
 	height: 44px;
-	background: #dff3fc;
+	background: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -922,7 +931,7 @@ section {
 	font-size: 22px;
 	font-weight: 600;
 	margin-bottom: 5px;
-	color: #050d18;
+	color: background-color;
 }
 
 .contact .info p {
@@ -944,7 +953,7 @@ section {
 	font-size: 18px;
 	display: inline-block;
 	background: #333;
-	color: #fff;
+	color: white;
 	line-height: 1;
 	padding: 8px 0;
 	border-radius: 50%;
@@ -956,13 +965,13 @@ section {
 }
 
 .contact .info .social-links a:hover {
-	background: #149ddd;
-	color: #fff;
+	background: primary-color;
+	color: white;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-	background: #149ddd;
-	color: #fff;
+	background: primary-color;
+	color: white;
 }
 
 /*--------------------------------------------------------------
@@ -970,7 +979,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
 	padding: 20px 0;
-	background: #f9f9f9;
+	background: white;
 }
 
 .breadcrumbs h2 {
@@ -1024,7 +1033,7 @@ section {
 	bottom: 0;
 	width: 300px;
 	z-index: 9999;
-	background: #040b14;
+	background: background-color;
 }
 
 #footer .copyright {
