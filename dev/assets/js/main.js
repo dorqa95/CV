@@ -142,12 +142,12 @@
     }
 
     /**
-     * Skills animation
+     * Strenghts animation
      */
-    let skilsContent = select('.skills-content');
-    if (skilsContent) {
+    let strengthsContent = select('.strengths-content');
+    if (strengthsContent) {
         new Waypoint({
-            element: skilsContent,
+            element: strengthsContent,
             offset: '80%',
             handler: function (direction) {
                 let progress = select('.progress .progress-bar', true);
@@ -159,7 +159,7 @@
     }
 
     /**
-     * Porfolio isotope and filter
+     * Portfolio isotope and filter
      */
     window.addEventListener('load', () => {
         let portfolioContainer = select('.portfolio-container');
